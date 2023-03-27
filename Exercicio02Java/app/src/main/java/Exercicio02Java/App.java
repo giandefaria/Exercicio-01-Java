@@ -14,6 +14,8 @@ public class App {
         float multiplicacao = 0f;
         float divisao = 0f;
         
+        Scanner leitor = new Scanner(System.in);
+        
         
     }
 }
