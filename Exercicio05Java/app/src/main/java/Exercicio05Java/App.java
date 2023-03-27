@@ -17,5 +17,10 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
+        System.out.println("Informe o nome do aluno:");
+        nomeAluno = leitor.nextLine();
+        
+        
+        
     }
 }
