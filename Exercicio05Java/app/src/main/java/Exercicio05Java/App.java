@@ -20,7 +20,18 @@ public class App {
         System.out.println("Informe o nome do aluno:");
         nomeAluno = leitor.nextLine();
         
+        System.out.println("Informe a nota do aluno na primeira prova:");
+        notaUm = leitor.nextFloat();
         
+        System.out.println("Informe a nota do aluno na segunda prova:");
+        notaDois = leitor.nextFloat();
+        
+        System.out.println("Informe a nota da terceira prova");
+        notaTres = leitor.nextFloat();
+        
+        System.out.println("O aluno " + nomeAluno + " atingiu a média de " + 
+                ((notaUm + notaDois + notaTres) / 3));
+            
         
     }
 }
