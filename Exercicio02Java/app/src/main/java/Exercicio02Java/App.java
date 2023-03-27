@@ -7,15 +7,20 @@ public class App {
 
 
     public static void main(String[] args) {
-        int primeiroNumero = 0;
-        int segundoNumero = 0;
-        int soma = 0;
-        int subtracao = 0;
-        float multiplicacao = 0f;
-        float divisao = 0f;
+        float primeiroNumero = 0f;
+        float segundoNumero = 0f;
         
         Scanner leitor = new Scanner(System.in);
         
+        System.out.println("Digite o primeiro número");
+        primeiroNumero = leitor.nextInt();
         
+        System.out.println("Digite o segundo número");
+        segundoNumero = leitor.nextInt();
+        
+        System.out.println("A soma entre os dois números é: " + (primeiroNumero + segundoNumero));
+        System.out.println("A subração entre os dois números é: " + (primeiroNumero - segundoNumero));
+        System.out.println("A multiplicação entre os dois números é: " + (primeiroNumero * segundoNumero));
+        System.out.println("A divisão entre os dois números é: " + (primeiroNumero / segundoNumero));
     }
 }
