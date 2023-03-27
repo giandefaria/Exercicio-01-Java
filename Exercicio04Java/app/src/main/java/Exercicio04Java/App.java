@@ -15,8 +15,20 @@ public class App {
         String nomeVendedor;
         float salarioFixo = 0f;
         float valorTotalVendasMes = 0f;
+        float salarioFinalMes = 0f;
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Digite o nome do vendedor:");
+        nomeVendedor = leitor.nextLine();
+        
+        System.out.println("Qual o salário fixo do vendedor?");
+        salarioFixo = leitor.nextFloat();
+        
+        System.out.println("Digite o valor total de vendas realizadas no mês pelo vendedor");
+        valorTotalVendasMes = leitor.nextFloat();
         
         
-        
+        salarioFinalMes = salarioFixo + (valorTotalVendasMes * 0.15f);
     }
 }
