@@ -28,7 +28,11 @@ public class App {
         System.out.println("Digite o valor total de vendas realizadas no mês pelo vendedor");
         valorTotalVendasMes = leitor.nextFloat();
         
-        
+        System.out.println("nome do vendedor: " + nomeVendedor);
+        System.out.println("salário fixo: " + salarioFixo + " R$");
+        System.out.println("valor de vendas no mês: " + valorTotalVendasMes + " R$");
+        System.out.println("valor da comissão: " + (valorTotalVendasMes * 0.15f) + " R$");
         salarioFinalMes = salarioFixo + (valorTotalVendasMes * 0.15f);
+        System.out.println("salário ao final do mês: " + salarioFinalMes + " R$"); 
     }
 }
