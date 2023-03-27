@@ -25,7 +25,7 @@ public class App {
         System.out.println("Variavel A vale: " + variavelA);
         System.out.println("Variavel B vale: " + variavelB);
         
-        variavelAuxiliar = variavelA;
+        variavelAuxiliar = variavelA; //variavel auxiliar guardará valor original de A
         variavelA = variavelB;
         variavelB = variavelAuxiliar;
         
