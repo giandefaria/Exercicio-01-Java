@@ -1,9 +1,11 @@
+//criado um algoritmo que pede dois número do usuário e mostra a soma ao final
 package Exercicio01Java;
 
 import java.util.Scanner;
 
 public class App {
 
+    
     public static void main(String[] args) {
         
         int primeiroNumero = 0;
