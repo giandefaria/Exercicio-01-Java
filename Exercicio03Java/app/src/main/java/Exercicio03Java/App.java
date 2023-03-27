@@ -13,5 +13,16 @@ public class App {
         float distanciaPercorridaCarro = 0f;
         float combustivelGasto = 0f;
         
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Digite a distancia percorrida pelo carro:");
+        distanciaPercorridaCarro = leitor.nextFloat();
+        
+        System.out.println("Digite a quantidade de combustivel gasto:");
+        combustivelGasto = leitor.nextFloat();
+        
+        System.out.println("O consumo médio do veículo é de: " + 
+                (distanciaPercorridaCarro / combustivelGasto) + "km por litro");
+        
     }
 }
