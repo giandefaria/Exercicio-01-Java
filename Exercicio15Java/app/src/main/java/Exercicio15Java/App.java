@@ -3,9 +3,16 @@ Faça um algoritmo que receba um número e diga se este número está no interva
  */
 package Exercicio15Java;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
+        
+        int numero;
+        
+        Scanner leitor = new Scanner(System.in);
+        
         
     }
 }
