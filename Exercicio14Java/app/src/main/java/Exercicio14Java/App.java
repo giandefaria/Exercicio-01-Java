@@ -14,5 +14,19 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
+        System.out.println("Informe o primeiro valor");
+        valorA = leitor.nextInt();
+        
+        System.out.println("Informe o segundo valor");
+        valorB = leitor.nextInt();
+        
+        if (valorA > valorB) {
+            System.out.println( valorA + " e maior que " + valorB);
+        } else if (valorA == valorB) {
+            System.out.println("Os valores informados são iguais");
+        } else {
+            System.out.println(valorB + " e maior que " + valorA);
+        }
+        
     }
 }
