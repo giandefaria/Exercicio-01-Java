@@ -12,7 +12,14 @@ public class App {
         
         float valorProduto;
         
+        Scanner leitor = new Scanner(System.in);
+        
         System.out.println("Digite o valor do produto: ");
+        valorProduto = leitor.nextFloat();
+        
+        System.out.println("Preço do produto: R$ " + valorProduto);
+        System.out.println("Valor das prestações em 5 vezes sem juros: R$ " + (valorProduto / 5));
+       
         
     }
 }
