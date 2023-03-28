@@ -4,11 +4,19 @@ mês.Considere fixo o juro da poupança em 0,07% a. m
  */
 package Exercicio09Java;
 
+import java.util.Scanner;
+
 public class App {
 
 
     public static void main(String[] args) {
 
+        float valorDepositado;
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Informe o valor depositado: ");
+        valorDepositado = leitor.nextFloat();
         
     }
 }
