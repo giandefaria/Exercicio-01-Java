@@ -5,10 +5,19 @@ Recuperação (media entre 5.1 a 6.9);
  */
 package Exercicio16Java;
 
+import java.util.Scanner;
+
 public class App {
 
 
     public static void main(String[] args) {
+        
+        float notaUm = 0f;
+        float notaDois = 0f;
+        float notaTres = 0f;
+        float media = 0f;
+        
+        Scanner leitor = new Scanner(System.in);
         
     }
 }
