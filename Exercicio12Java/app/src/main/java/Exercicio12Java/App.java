@@ -14,8 +14,19 @@ public class App {
     public static void main(String[] args) {
         
         float precoCustoFabrica;
+        float precoDistribuidor;
         float precoCustoConsumidor;
         
         
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Informe o preço de custo de fábrica do carro:");
+        precoCustoFabrica = leitor.nextFloat();
+        
+        precoDistribuidor = precoCustoFabrica + (precoCustoFabrica * 45 / 100);
+        
+        precoCustoConsumidor = precoDistribuidor + (precoDistribuidor * 28 / 100);
+        
+        System.out.println("O preço final do carro ao consumidor será de R$ " + precoCustoConsumidor);
     }
 }
