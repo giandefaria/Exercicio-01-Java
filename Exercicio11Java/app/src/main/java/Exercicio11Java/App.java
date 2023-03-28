@@ -13,6 +13,7 @@ public class App {
         
         float precoDeCusto;
         float percentualLucro;
+        float valorParaVenda;
         
         Scanner leitor = new Scanner(System.in);
         
@@ -21,5 +22,9 @@ public class App {
         
         System.out.println("Informe o percentual de lucro que deseja obter");
         percentualLucro = leitor.nextFloat();
+        
+        valorParaVenda = precoDeCusto + (precoDeCusto * percentualLucro / 100);
+        
+        System.out.println("O valor para venda do produto será de: R$ " + valorParaVenda);
     }
 }
