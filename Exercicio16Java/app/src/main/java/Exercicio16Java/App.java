@@ -34,6 +34,12 @@ public class App {
         
         media = (notaUm + notaDois + notaTres) / 3;
         
-        
+        if(media >= 7) {
+            System.out.println("Parabéns " + nomeAluno + ", você foi aprovado com a média " + media + "!");
+        } else if (media <= 5) {
+            System.out.println(nomeAluno + ", informamos que você foi reprovado com a média " + media + "!");
+        } else {
+            System.out.println(nomeAluno + ", informamos que você está em recuperação com a média " + media + "!");
+        }
     }
 }
