@@ -5,6 +5,8 @@ disponíveis com ousuário;
  */
 package Exercicio08Java;
 
+import java.util.Scanner;
+
 public class App {
 
 
@@ -13,6 +15,16 @@ public class App {
         float cotacaoDoDolar = 0f;
         float conversaoEmReal = 0f;
         
-
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Informe a cotação do dólar: ");
+        cotacaoDoDolar = leitor.nextFloat();
+        
+        System.out.println("Informe o valor em dólar: ");
+        valorEmDolar = leitor.nextFloat();
+        
+        conversaoEmReal = valorEmDolar * cotacaoDoDolar;
+        System.out.println("O valor da conversão para real é de: R$" + conversaoEmReal);
+        
     }
 }
