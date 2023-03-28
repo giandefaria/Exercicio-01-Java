@@ -4,10 +4,14 @@ preço de custo receberá um acréscimo de acordo com um percentual informado pe
  */
 package Exercicio11Java;
 
+import java.util.Scanner;
+
 public class App {
 
 
     public static void main(String[] args) {
         
+        float precoDeCusto;
+        float percentualLucro;
     }
 }
