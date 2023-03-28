@@ -31,5 +31,9 @@ public class App {
         
         System.out.println("Informe a terceira nota");
         notaTres = leitor.nextFloat();
+        
+        media = (notaUm + notaDois + notaTres) / 3;
+        
+        
     }
 }
