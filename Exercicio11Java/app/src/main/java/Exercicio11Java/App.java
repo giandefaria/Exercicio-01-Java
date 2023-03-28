@@ -13,5 +13,13 @@ public class App {
         
         float precoDeCusto;
         float percentualLucro;
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Informe o preço de custo do produto: ");
+        precoDeCusto = leitor.nextFloat();
+        
+        System.out.println("Informe o percentual de lucro que deseja obter");
+        percentualLucro = leitor.nextFloat();
     }
 }
