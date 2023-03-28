@@ -12,11 +12,15 @@ public class App {
     public static void main(String[] args) {
         
         int temperaturaCelsius;
+        int temperaturaFahrenheit
         
         Scanner leitor = new Scanner(System.in);
         
         System.out.println("Informe a temperatura em graus Celsius");
         temperaturaCelsius = leitor.nextInt();
         
+        temperaturaFahrenheit = (9 * temperaturaCelsius + 160) / 5;
+        System.out.println("A temperatura convertida em Fahrenheit é de: "
+                + temperaturaFahrenheit);
     }
 }
