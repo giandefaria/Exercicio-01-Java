@@ -18,5 +18,7 @@ public class App {
         System.out.println("Informe o valor depositado: ");
         valorDepositado = leitor.nextFloat();
         
+        System.out.println("O valor depositado, após um mes, com rendimento de 0,07% a.m., será de R$ " + (valorDepositado * 0.07 / 100));
+        
     }
 }
