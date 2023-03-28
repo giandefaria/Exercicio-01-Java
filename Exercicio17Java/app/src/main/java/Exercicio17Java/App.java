@@ -12,9 +12,13 @@ public class App {
     public static void main(String[] args) {
         
         int numero;
-        int quantidadeNumero = 0;
+        int quantidadeNumero = 1;
         
+        while (quantidadeNumero <= 5) {
+            
+            System.out.println("Informe um número:");
         
+        }
         
     }
 }
