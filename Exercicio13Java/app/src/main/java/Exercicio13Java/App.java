@@ -3,11 +3,13 @@
  */
 package Exercicio13Java;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
         
-        
+        int numero;
 
     }
 }
