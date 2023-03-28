@@ -15,5 +15,10 @@ public class App {
         int quantidadeRepeticoes = 5;
         
         Scanner leitor = new Scanner(System.in);
+        
+        while (quantidadeRepeticoes > 0) {
+        
+        }
+        
     }
 }
