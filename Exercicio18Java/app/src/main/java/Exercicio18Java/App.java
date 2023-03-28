@@ -4,10 +4,16 @@ Faça um algoritmo que receba a idade de 75 pessoas e mostre mensagem informando
  */
 package Exercicio18Java;
 
+import java.util.Scanner;
+
 public class App {
 
 
     public static void main(String[] args) {
         
+        int idade;
+        int quantidadeRepeticoes = 5;
+        
+        Scanner leitor = new Scanner(System.in);
     }
 }
