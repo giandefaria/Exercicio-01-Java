@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
         
         int numero;
-        int repeticoes = 5;
+        int repeticoes = 5; //em vez de 80, vou fazer apenas para 5
         int quantidadeNumeroNoIntervalo = 0;
         
         Scanner leitor = new Scanner(System.in);
@@ -28,6 +28,8 @@ public class App {
         
             repeticoes--;
         }
+        
+        System.out.println(quantidadeNumeroNoIntervalo + " número(s) esta(o) entre o intervalo de 10 e 150");
         
     }
 }
