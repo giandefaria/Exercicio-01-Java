@@ -11,9 +11,9 @@ public class App {
 
 
     public static void main(String[] args) {
-        float valorEmDolar = 0f;
-        float cotacaoDoDolar = 0f;
-        float conversaoEmReal = 0f;
+        float valorEmDolar = 0.0f;
+        float cotacaoDoDolar = 0.0f;
+        float conversaoEmReal = 0.0f;
         
         Scanner leitor = new Scanner(System.in);
         
@@ -24,7 +24,7 @@ public class App {
         valorEmDolar = leitor.nextFloat();
         
         conversaoEmReal = valorEmDolar * cotacaoDoDolar;
-        System.out.println("O valor da conversão para real é de: R$" + conversaoEmReal);
+        System.out.println("O valor da conversão para real é de: R$ " + conversaoEmReal);
         
     }
 }
