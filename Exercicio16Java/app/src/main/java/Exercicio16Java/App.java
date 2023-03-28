@@ -12,6 +12,7 @@ public class App {
 
     public static void main(String[] args) {
         
+        String nomeAluno;
         float notaUm = 0f;
         float notaDois = 0f;
         float notaTres = 0f;
@@ -19,5 +20,16 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
+        System.out.println("Informe o nome do aluno");
+        nomeAluno = leitor.nextLine();
+        
+        System.out.println("Informe a primeira nota");
+        notaUm = leitor.nextFloat();
+        
+        System.out.println("Informe a segunda nota");
+        notaDois = leitor.nextFloat();
+        
+        System.out.println("Informe a terceira nota");
+        notaTres = leitor.nextFloat();
     }
 }
