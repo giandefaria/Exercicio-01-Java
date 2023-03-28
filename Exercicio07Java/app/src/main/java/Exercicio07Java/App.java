@@ -4,12 +4,16 @@ conversão é:F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a tempera
  */
 package Exercicio07Java;
 
+import java.util.Scanner;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        
+        int temperaturaCelsius;
+        
+        
+        
     }
 }
