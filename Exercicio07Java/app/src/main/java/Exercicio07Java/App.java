@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
         
         int temperaturaCelsius;
-        int temperaturaFahrenheit
+        int temperaturaFahrenheit;
         
         Scanner leitor = new Scanner(System.in);
         
