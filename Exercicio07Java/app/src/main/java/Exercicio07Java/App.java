@@ -13,7 +13,10 @@ public class App {
         
         int temperaturaCelsius;
         
+        Scanner leitor = new Scanner(System.in);
         
+        System.out.println("Informe a temperatura em graus Celsius");
+        temperaturaCelsius = leitor.nextInt();
         
     }
 }
