@@ -12,12 +12,21 @@ public class App {
     public static void main(String[] args) {
         
         int numero;
-        int quantidadeNumero = 1;
+        int repeticoes = 5;
+        int quantidadeNumeroNoIntervalo = 0;
         
-        while (quantidadeNumero <= 5) {
+        Scanner leitor = new Scanner(System.in);
+        
+        while (repeticoes > 0) {
             
             System.out.println("Informe um número:");
+            numero = leitor.nextInt();
+            
+            if (numero >= 10 && numero <= 150){
+                quantidadeNumeroNoIntervalo++;
+            }
         
+            repeticoes--;
         }
         
     }
