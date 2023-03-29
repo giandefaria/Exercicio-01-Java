@@ -14,8 +14,14 @@ public class App {
         char sexo;
         int idade;
         char saude;
+        char desejaContinuar = 'S';
         
         Scanner leitor = new Scanner(System.in);
+        
+        while (desejaContinuar == 'S' || desejaContinuar == 's') {
+        
+        
+        }
         
     }
 }
