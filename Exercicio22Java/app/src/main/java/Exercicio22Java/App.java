@@ -28,8 +28,8 @@ public class App {
             System.out.println("Informe o preço de venda:");
             precoVenda = leitor.nextFloat();
             
-            precoCustoTotal = precoCusto + precoCusto;
-            precoVendaTotal = precoVenda + precoVenda;
+            precoCustoTotal = precoCustoTotal + precoCusto;
+            precoVendaTotal = precoVendaTotal + precoVenda;
             
             System.out.println("O preço do produto é de R$ " + precoCusto + ", e foi vendido por R$" + precoVenda);
             
