@@ -16,7 +16,7 @@ public class App {
         float valorCarro;
         int anoCarro;
         float valorDesconto;
-        int carrosAntesDoisMil = 0;
+        int carrosAteDoisMil = 0;
         int totalCarros = 0;
         char desejaContinuar = 'S';
         
@@ -32,7 +32,7 @@ public class App {
             
             if (anoCarro <= 2000) {            
                 valorDesconto = valorCarro * 0.12f; //desconto 12%
-                carrosAntesDoisMil++;
+                carrosAteDoisMil++;
             } else {
                 valorDesconto = valorCarro * 0.07f; //desconto 7%
             }
@@ -48,6 +48,9 @@ public class App {
             System.out.println("Deseja continuar? S - sim, N - nao");
             desejaContinuar = leitor.next().charAt(0);
         }
+        
+        System.out.println("Total de carros até o ano 2000: " + carrosAteDoisMil);
+        System.out.println("Total de carros: " + totalCarros);
         
     }
 }
