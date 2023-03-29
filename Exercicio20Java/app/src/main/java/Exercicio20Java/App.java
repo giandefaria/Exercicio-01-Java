@@ -7,10 +7,16 @@ Informar total de carros com ano até 2000 e total geral;
  */
 package Exercicio20Java;
 
+import java.util.Scanner;
+
 public class App {
 
-
     public static void main(String[] args) {
+        
+        float valorCarro;
+        int anoCarro;
+        float valorDesconto;
+        char desejaContinuar = 'S';
         
     }
 }
