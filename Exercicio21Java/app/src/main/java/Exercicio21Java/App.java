@@ -15,6 +15,7 @@ public class App {
         int idade;
         char saude;
         char desejaContinuar = 'S';
+        int quantidadeAlistados = 0;
         
         Scanner leitor = new Scanner(System.in);
         
@@ -29,8 +30,19 @@ public class App {
             idade = leitor.nextInt();
             
             System.out.println("Informe seu estado de saude. B - boa, R - ruim");
+            saude = leitor.next().charAt(0);
             
+            if ( (sexo == 'h' || sexo == 'H') && idade >= 18 && (saude == 'B' || saude == 'b') ) {
             
+                System.out.println(nome + ", sexo " + sexo + ", saude boa, "
+                        + "está apto para cumprir o serviço militar obrigatório");
+            } else {
+            
+                System.out.println(nome + ", sexo " + sexo + ", saude " + 
+                        ", não está apto para cumprir o serviço militar obrigatório");
+            }
+            
+            quantidadeAlistados++;
             
             System.out.println("Deseja continuar? S - sim, N - não");
             desejaContinuar = leitor.next().charAt(0);
