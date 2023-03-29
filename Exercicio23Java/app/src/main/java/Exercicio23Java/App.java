@@ -13,5 +13,9 @@ public class App {
         
         int numero;
         
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Informe um número:");
+        numero = leitor.nextInt();
     }
 }
