@@ -4,9 +4,18 @@ ou não para cumprir o serviço militar obrigatório. Informe os totais;
  */
 package Exercicio21Java;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
+        
+        String nome;
+        char sexo;
+        int idade;
+        char saude;
+        
+        Scanner leitor = new Scanner(System.in);
         
     }
 }
