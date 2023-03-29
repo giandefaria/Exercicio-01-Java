@@ -18,5 +18,7 @@ public class App {
         float valorDesconto;
         char desejaContinuar = 'S';
         
+        Scanner leitor = new Scanner(System.in);
+        
     }
 }
