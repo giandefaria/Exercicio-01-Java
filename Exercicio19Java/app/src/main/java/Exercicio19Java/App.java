@@ -25,7 +25,14 @@ public class App {
             System.out.println("Informe o sexo. M - Mulher, H - Homem");
             sexo = leitor.next().charAt(0);
             
-            
+            if ( sexo == 'm' || sexo == 'M') {
+                System.out.println(nome + " é uma mulher.");
+            } else if (sexo == 'h' || sexo == 'H') {
+                System.out.println(nome + " é um homem.");
+            } else {
+                System.out.println("Dados invalidos");
+                quantidadeRepeticoes++;
+            }
         
             quantidadeRepeticoes--;
         }
