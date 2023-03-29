@@ -17,6 +17,12 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
+        while (quantidadeRepeticoes > 0) {
+        
+            
+        
+            quantidadeRepeticoes--;
+        }
         
     }
 }
