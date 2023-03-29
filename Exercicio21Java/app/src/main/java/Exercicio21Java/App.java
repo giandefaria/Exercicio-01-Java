@@ -19,8 +19,21 @@ public class App {
         Scanner leitor = new Scanner(System.in);
         
         while (desejaContinuar == 'S' || desejaContinuar == 's') {
-        
-        
+            System.out.println("Informe o seu nome: ");
+            nome = leitor.next();
+            
+            System.out.println("Informe o sexo. M - mulher, H - homem");
+            sexo = leitor.next().charAt(0);
+            
+            System.out.println("Informe a idade:");
+            idade = leitor.nextInt();
+            
+            System.out.println("Informe seu estado de saude. B - boa, R - ruim");
+            
+            
+            
+            System.out.println("Deseja continuar? S - sim, N - não");
+            desejaContinuar = leitor.next().charAt(0);
         }
         
     }
