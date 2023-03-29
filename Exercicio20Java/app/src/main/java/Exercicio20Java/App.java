@@ -21,7 +21,14 @@ public class App {
         Scanner leitor = new Scanner(System.in);
         
         while (desejaContinuar == 'S' || desejaContinuar == 's') {
-        
+            
+            System.out.println("Informe o valor do carro:");
+            valorCarro = leitor.nextFloat();
+            
+            System.out.println("Informe o ano do carro");
+            anoCarro = leitor.nextInt();
+            
+            
         
             System.out.println("Deseja continuar? S - sim, N - nao");
             desejaContinuar = leitor.next().charAt(0);
