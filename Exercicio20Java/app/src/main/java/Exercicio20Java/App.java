@@ -28,7 +28,12 @@ public class App {
             System.out.println("Informe o ano do carro");
             anoCarro = leitor.nextInt();
             
-            
+            if (anoCarro <= 2000) {
+                
+                valorDesconto = valorCarro * 0.12f; //desconto 12%
+            } else {
+                valorDesconto = valorCarro * 0.07f; //desconto 7%
+            }
         
             System.out.println("Deseja continuar? S - sim, N - nao");
             desejaContinuar = leitor.next().charAt(0);
