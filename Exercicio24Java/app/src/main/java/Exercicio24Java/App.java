@@ -12,6 +12,13 @@ public class App {
         int numero;
         int numeroRepeticao = 5;
         
+        Scanner leitor = new Scanner(System.in);
+        
+        for (; numeroRepeticao > 0; numeroRepeticao-- ) {
+        
+            
+        
+        }
         
     }
 }
