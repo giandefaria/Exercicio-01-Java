@@ -16,5 +16,11 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
+        System.out.println("Insira o primeiro número:");
+        numeroUm = leitor.nextInt();
+        
+        System.out.println("Insira o segundo número:");
+        numeroDois = leitor.nextInt();
+        
     }
 }
