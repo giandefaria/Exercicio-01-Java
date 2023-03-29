@@ -16,7 +16,16 @@ public class App {
         
         for (; numeroRepeticao > 0; numeroRepeticao-- ) {
         
+            System.out.println("Informe um número:");
+            numero = leitor.nextInt();
             
+            if (numero < 0) {
+                System.out.println("O número informado é negativo");
+            } else if (numero == 0) {
+                System.out.println("O número informado é igual a zero");
+            } else {
+                System.out.println("O número é positivo");
+            }
         
         }
         
