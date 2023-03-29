@@ -15,7 +15,7 @@ public class App {
         int idade;
         char saude;
         char desejaContinuar = 'S';
-        int quantidadeAlistados = 0;
+        int quantidadeInscritos = 0;
         
         Scanner leitor = new Scanner(System.in);
         
@@ -42,11 +42,13 @@ public class App {
                         ", não está apto para cumprir o serviço militar obrigatório");
             }
             
-            quantidadeAlistados++;
+            quantidadeInscritos++;
             
             System.out.println("Deseja continuar? S - sim, N - não");
             desejaContinuar = leitor.next().charAt(0);
         }
+        
+        System.out.println("Quantidade de inscritos: " + quantidadeInscritos);
         
     }
 }
