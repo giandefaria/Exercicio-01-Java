@@ -19,6 +19,12 @@ public class App {
         
         while (quantidadeRepeticoes > 0) {
         
+            System.out.println("Informe o nome da pessoa: ");
+            nome = leitor.next();
+            
+            System.out.println("Informe o sexo. M - Mulher, H - Homem");
+            sexo = leitor.next().charAt(0);
+            
             
         
             quantidadeRepeticoes--;
