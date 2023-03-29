@@ -16,6 +16,8 @@ public class App {
         float valorCarro;
         int anoCarro;
         float valorDesconto;
+        int carrosAntesDoisMil = 0;
+        int totalCarros = 0;
         char desejaContinuar = 'S';
         
         Scanner leitor = new Scanner(System.in);
@@ -34,7 +36,14 @@ public class App {
             } else {
                 valorDesconto = valorCarro * 0.07f; //desconto 7%
             }
-        
+            
+            System.out.println("Valor do carro: R$ " + valorCarro);
+            System.out.println("Ano do carro: " + anoCarro);
+            System.out.println("Valor do desconto: R$ " + valorDesconto);
+            System.out.println("Valor do carro com desconto: R$ "
+                    + (valorCarro - valorDesconto));
+            
+                    
             System.out.println("Deseja continuar? S - sim, N - nao");
             desejaContinuar = leitor.next().charAt(0);
         }
