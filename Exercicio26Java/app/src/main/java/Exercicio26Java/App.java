@@ -16,7 +16,8 @@ public class App {
         Scanner leitor = new Scanner(System.in);
         
         for(int i = 0; i < 5; i++) {
-        
+            System.out.println("Informe um número entre 1 a 5");
+            numero = leitor.nextInt();
         
         }
     }
