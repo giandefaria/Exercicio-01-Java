@@ -27,6 +27,10 @@ public class App {
         while (desejaContinuar == 's' || desejaContinuar == 'S') {
             System.out.println("Informe o valor do carro:");
             valorVeiculo = leitor.nextInt();
+            
+            System.out.println("Informe o combustível do veículo. A - Alcool, G - gasolina, d - diesel");
+            combustivel = leitor.next().charAt(0);
+            
         
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
