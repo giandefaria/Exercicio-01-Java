@@ -23,6 +23,16 @@ public class App {
         float valorReajuste;
         float valorNovoSalario;
         
+        char desejaContinuar = 's';
+        
         Scanner leitor = new Scanner(System.in);
+        
+        while (desejaContinuar == 's' || desejaContinuar == 'S') {
+        
+        
+            System.out.println("Deseja continuar? S - Sim, N - Nao");
+            desejaContinuar = leitor.next().charAt(0);
+        }
+        
     }
 }
