@@ -11,10 +11,18 @@ vai aumentar sua folha de pagamento;
  */
 package Exercicio28Java;
 
-public class App {
+import java.util.Scanner;
 
+public class App {
 
     public static void main(String[] args) {
         
+        String nome;
+        float salarioFuncionario;
+        float salarioMinimo = 1300f;
+        float valorReajuste;
+        float valorNovoSalario;
+        
+        Scanner leitor = new Scanner(System.in);
     }
 }
