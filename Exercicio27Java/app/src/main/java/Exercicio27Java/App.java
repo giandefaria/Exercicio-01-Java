@@ -33,10 +33,18 @@ public class App {
             combustivel = leitor.next().charAt(0);
             
             if(combustivel == 'a' || combustivel == 'A') {
-                valorDesconto = valorVeiculo + (valorVeiculo * 0.25f);
+                valorDesconto = valorVeiculo * 0.25f;
                 valorFinalPagoCliente = valorVeiculo - valorDesconto;
                 System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
             
+            } else if(combustivel == 'g' || combustivel == 'G') {
+                valorDesconto = valorVeiculo * 0.21f;
+                valorFinalPagoCliente = valorVeiculo - valorDesconto;
+                System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
+            } else {
+                valorDesconto = valorVeiculo * 0.14f;
+                valorFinalPagoCliente = valorVeiculo - valorDesconto;
+                System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
             }
             
             totalDesconto =+ valorDesconto; 
@@ -45,6 +53,9 @@ public class App {
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
         }
+        
+        System.out.println("Valor total de descontos dados: R$ " + totalDesconto);
+        System.out.println("Valor total pago pelos clientes: R$ " + totalPagoClientes);
         
     }
 }
