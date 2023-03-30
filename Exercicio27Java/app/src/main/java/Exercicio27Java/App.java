@@ -15,8 +15,8 @@ public class App {
     public static void main(String[] args) {
         
         float valorVeiculo;
-        float valorDesconto;
-        float valorFinalPagoCliente;
+        float valorDesconto = 0f;
+        float valorFinalPagoCliente = 0f;
         char combustivel;
         char desejaContinuar = 's';
         
@@ -38,6 +38,9 @@ public class App {
                 System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
             
             }
+            
+            totalDesconto =+ valorDesconto; 
+            totalPagoClientes =+ valorFinalPagoCliente;
         
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
