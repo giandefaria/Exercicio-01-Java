@@ -16,6 +16,7 @@ public class App {
         
         float valorVeiculo;
         float valorDesconto;
+        float valorFinalPagoCliente;
         char combustivel;
         char desejaContinuar = 's';
         
@@ -31,6 +32,12 @@ public class App {
             System.out.println("Informe o combustível do veículo. A - Alcool, G - gasolina, d - diesel");
             combustivel = leitor.next().charAt(0);
             
+            if(combustivel == 'a' || combustivel == 'A') {
+                valorDesconto = valorVeiculo + (valorVeiculo * 0.25f);
+                valorFinalPagoCliente = valorVeiculo - valorDesconto;
+                System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
+            
+            }
         
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
