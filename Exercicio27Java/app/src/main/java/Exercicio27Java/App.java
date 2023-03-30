@@ -11,33 +11,32 @@ import java.util.Scanner;
 
 public class App {
 
-
     public static void main(String[] args) {
-        
+
         float valorVeiculo;
         float valorDesconto = 0f;
         float valorFinalPagoCliente = 0f;
         char combustivel;
         char desejaContinuar = 's';
-        
+
         float totalDesconto = 0f;
         float totalPagoClientes = 0f;
-        
+
         Scanner leitor = new Scanner(System.in);
-        
+
         while (desejaContinuar == 's' || desejaContinuar == 'S') {
             System.out.println("Informe o valor do carro:");
             valorVeiculo = leitor.nextInt();
-            
+
             System.out.println("Informe o combustível do veículo. A - Alcool, G - gasolina, d - diesel");
             combustivel = leitor.next().charAt(0);
-            
-            if(combustivel == 'a' || combustivel == 'A') {
+
+            if (combustivel == 'a' || combustivel == 'A') {
                 valorDesconto = valorVeiculo * 0.25f;
                 valorFinalPagoCliente = valorVeiculo - valorDesconto;
                 System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
-            
-            } else if(combustivel == 'g' || combustivel == 'G') {
+
+            } else if (combustivel == 'g' || combustivel == 'G') {
                 valorDesconto = valorVeiculo * 0.21f;
                 valorFinalPagoCliente = valorVeiculo - valorDesconto;
                 System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
@@ -46,16 +45,16 @@ public class App {
                 valorFinalPagoCliente = valorVeiculo - valorDesconto;
                 System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
             }
-            
-            totalDesconto += valorDesconto; 
+
+            totalDesconto += valorDesconto;
             totalPagoClientes += valorFinalPagoCliente;
-        
+
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
         }
-        
+
         System.out.println("Valor total de descontos dados: R$ " + totalDesconto);
         System.out.println("Valor total pago pelos clientes: R$ " + totalPagoClientes);
-        
+
     }
 }
