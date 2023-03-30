@@ -7,10 +7,20 @@ clientes
  */
 package Exercicio27Java;
 
+import java.util.Scanner;
+
 public class App {
 
 
     public static void main(String[] args) {
+        
+        float valorVeiculo;
+        float valorDesconto;
+        char combustivel;
+        char desejaContinuar = 's';
+        
+        float totalDesconto = 0f;
+        float totalPagoClientes = 0f;
         
     }
 }
