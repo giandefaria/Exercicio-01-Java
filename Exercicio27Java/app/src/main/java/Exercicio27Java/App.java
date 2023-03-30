@@ -22,5 +22,14 @@ public class App {
         float totalDesconto = 0f;
         float totalPagoClientes = 0f;
         
+        Scanner leitor = new Scanner(System.in);
+        
+        while (desejaContinuar == 's' || desejaContinuar == 'S') {
+        
+        
+            System.out.println("Deseja continuar? S - Sim, N - Não");
+            desejaContinuar = leitor.next().charAt(0);
+        }
+        
     }
 }
