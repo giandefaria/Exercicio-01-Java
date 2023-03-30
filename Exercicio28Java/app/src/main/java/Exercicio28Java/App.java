@@ -37,15 +37,20 @@ public class App {
             
             if(salarioFuncionario <= (salarioMinimo * 3)) {
                 valorReajuste = salarioFuncionario * 0.50f; //reajuste 50%
-            } else if (salarioFuncionario > (salarioFuncionario * 3) && salarioFuncionario <= (salarioFuncionario * 10)) {
+            } else if (salarioFuncionario > (salarioMinimo * 3) && salarioFuncionario <= (salarioMinimo * 10)) {
                 valorReajuste = salarioFuncionario * 0.20f; //reajuste 20%
-            } else if (salarioFuncionario > (salarioFuncionario * 10) && salarioFuncionario <= (salarioFuncionario * 20)) {
+            } else if (salarioFuncionario > (salarioMinimo * 10) && salarioFuncionario <= (salarioMinimo * 20)) {
                 valorReajuste = salarioFuncionario * 0.15f;
             } else {
                 valorReajuste = salarioFuncionario * 0.10f;
             }
             
-            valorNovoSalario = salarioFuncionario + valorReajuste;      
+            valorNovoSalario = salarioFuncionario + valorReajuste;
+            
+            System.out.println("Nome do funcionário: " + nome);
+            System.out.println("Salario atual: R$ " + salarioFuncionario);
+            System.out.println("Valor do reajuste: R$ " + valorReajuste);
+            System.out.println("Novo salário: R$ " + valorNovoSalario);
         
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaContinuar = leitor.next().charAt(0);
