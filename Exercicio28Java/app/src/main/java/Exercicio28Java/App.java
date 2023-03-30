@@ -35,7 +35,10 @@ public class App {
             System.out.println("Informe o salário do funcionário:");
             salarioFuncionario = leitor.nextFloat();
             
+            if(salarioFuncionario < (salarioMinimo * 3)) {
+                valorReajuste = salarioFuncionario * 0.50f;
             
+            }
         
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaContinuar = leitor.next().charAt(0);
