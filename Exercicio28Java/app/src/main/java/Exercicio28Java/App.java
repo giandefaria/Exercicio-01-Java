@@ -35,8 +35,14 @@ public class App {
             System.out.println("Informe o salário do funcionário:");
             salarioFuncionario = leitor.nextFloat();
             
-            if(salarioFuncionario < (salarioMinimo * 3)) {
+            if(salarioFuncionario <= (salarioMinimo * 3)) {
                 valorReajuste = salarioFuncionario * 0.50f; //reajuste 50%
+            } else if (salarioFuncionario > (salarioFuncionario * 3) && salarioFuncionario <= (salarioFuncionario * 10)) {
+                valorReajuste = salarioFuncionario * 0.20f; //reajuste 20%
+            } else if (salarioFuncionario > (salarioFuncionario * 10) && salarioFuncionario <= (salarioFuncionario * 20)) {
+                valorReajuste = salarioFuncionario * 0.15f;
+            } else {
+                valorReajuste = salarioFuncionario * 0.10f;
             }
             
             valorNovoSalario = salarioFuncionario + valorReajuste;      
