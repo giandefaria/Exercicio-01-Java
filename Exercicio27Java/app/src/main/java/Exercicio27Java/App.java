@@ -47,8 +47,8 @@ public class App {
                 System.out.println("Valor final a ser pago pelo cliente é de R$ " + valorFinalPagoCliente);
             }
             
-            totalDesconto =+ valorDesconto; 
-            totalPagoClientes =+ valorFinalPagoCliente;
+            totalDesconto += valorDesconto; 
+            totalPagoClientes += valorFinalPagoCliente;
         
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
