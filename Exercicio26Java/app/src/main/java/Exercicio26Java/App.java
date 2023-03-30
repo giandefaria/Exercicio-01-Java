@@ -4,10 +4,16 @@ que não esteja neste intervalo, exibir a seguinte mensagem: número inválido;
  */
 package Exercicio26Java;
 
+import java.util.Scanner;
+
 public class App {
 
 
     public static void main(String[] args) {
+        
+        int numero;
+        
+        Scanner leitor = new Scanner(System.in);
         
     }
 }
