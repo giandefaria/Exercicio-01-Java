@@ -20,7 +20,7 @@ public class App {
         String nome;
         float salarioFuncionario;
         float salarioMinimo = 1300f;
-        float valorReajuste;
+        float valorReajuste = 0f;
         float valorNovoSalario;
         
         char desejaContinuar = 's';
@@ -36,9 +36,10 @@ public class App {
             salarioFuncionario = leitor.nextFloat();
             
             if(salarioFuncionario < (salarioMinimo * 3)) {
-                valorReajuste = salarioFuncionario * 0.50f;
-            
+                valorReajuste = salarioFuncionario * 0.50f; //reajuste 50%
             }
+            
+            valorNovoSalario = salarioFuncionario + valorReajuste;      
         
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaContinuar = leitor.next().charAt(0);
