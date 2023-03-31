@@ -29,6 +29,9 @@ public class App {
             System.out.println("Informe o tipo de imóvel. R - Residencia, C - Comercio, I - Industria");
             tipoImovel = leitor.next().charAt(0);
             
+            if (tipoImovel == 'r' || tipoImovel == 'R') {
+                valorContaLuz = quantidadeKW * 0.60f;
+            }
             
             
             
