@@ -15,9 +15,18 @@ public class App {
     public static void main(String[] args) {
         
         float quantidadeKW;
-        float valorContaLuz;
+        float valorContaLuz;    
+        char tipoImovel;
+        char desejaContinuar = 's';
         
         Scanner leitor = new Scanner(System.in);
+        
+        while (desejaContinuar == 's' || desejaContinuar == 'S') {
+        
+                    
+            System.out.println("Deseja continuar? S - Sim, N - Nao");
+            desejaContinuar = leitor.next().charAt(0);
+        }
         
     }
 }
