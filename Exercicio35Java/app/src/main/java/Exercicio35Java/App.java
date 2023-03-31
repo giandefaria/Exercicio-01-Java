@@ -22,7 +22,16 @@ public class App {
         Scanner leitor = new Scanner(System.in);
         
         while (desejaContinuar == 's' || desejaContinuar == 'S') {
-        
+            
+            System.out.println("Informe a quantidade de KW/h consumido:");
+            quantidadeKW = leitor.nextFloat();
+            
+            System.out.println("Informe o tipo de imóvel. R - Residencia, C - Comercio, I - Industria");
+            tipoImovel = leitor.next().charAt(0);
+            
+            
+            
+            
                     
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaContinuar = leitor.next().charAt(0);
