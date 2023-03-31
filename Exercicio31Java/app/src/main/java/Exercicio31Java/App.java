@@ -21,11 +21,14 @@ public class App {
         
         while (desejaRepetir == 's' || desejaRepetir == 'S') {
         
-            System.out.println("Informe o primeiro valor:");
+            System.out.println("Informe o primeiro numero inteiro:");
             a = leitor.nextInt();
             
-            System.out.println("Informe o segundo valor:");
+            System.out.println("Informe o segundo numero inteiro:");
             b = leitor.nextInt();
+            
+            System.out.println("Informe um operador válido (*, /, +, -)");
+            operador = leitor.next().charAt(0);
             
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaRepetir = leitor.next().charAt(0);
