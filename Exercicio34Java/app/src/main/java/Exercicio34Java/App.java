@@ -9,9 +9,15 @@ Apresentar mensagem “idade fora da faixa etária” quando for outro ano não 
  */
 package Exercicio34Java;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
+        
+        int idade;
+        
+        Scanner leitor = new Scanner(System.in);
         
     }
 }
