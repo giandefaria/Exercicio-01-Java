@@ -21,13 +21,15 @@ public class App {
         int ladoB = 0;
         int ladoC = 0;
         
-        if ( ((ladoB - ladoC) < ladoA && ladoA < (ladoB + ladoC)) ||
-             ((ladoA - ladoC) < ladoB && ladoB < (ladoA + ladoC)) ||
-             ((ladoA - ladoB) < ladoC && ladoC < (ladoA + ladoB))   
+        if ( ladoA < (ladoB + ladoC) || 
+             ladoB < (ladoA + ladoC) || 
+             ladoC < (ladoA + ladoB)
             ) {
             
             if (ladoA == ladoB && ladoB == ladoC){
-                System.out.println("Triangulo Equilatero");                
+                System.out.println("Triangulo Equilatero, tres lados iguais");                
+            } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+                System.out.println("Triângulo Isoscele, dois lados iguais");
             }
         
         } else {
