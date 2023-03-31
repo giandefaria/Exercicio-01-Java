@@ -30,6 +30,8 @@ public class App {
                 System.out.println("Triangulo Equilatero, tres lados iguais");                
             } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
                 System.out.println("Triângulo Isoscele, dois lados iguais");
+            } else {
+                System.out.println("Trianglo Escaleno, tres lados diferentes");
             }
         
         } else {
