@@ -27,6 +27,16 @@ public class App {
             
             System.out.println("Digite a quantidade de horas trabalhadas:");
             horas = leitor.nextInt();
+            
+            switch(nivel) {
+                case 1 -> salario = horas * 12;
+                case 2 -> salario = horas * 17;
+                case 3 -> salario = horas * 25;
+                default -> {
+                    salario = 0;
+                    System.out.println("Digite um nivel válido, de 1 a 3");
+                }
+            }
         
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
