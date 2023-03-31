@@ -21,6 +21,8 @@ public class App {
         int ladoB = 0;
         int ladoC = 0;
         
+        Scanner leitor = new Scanner(System.in);
+        
         if ( ladoA < (ladoB + ladoC) || 
              ladoB < (ladoA + ladoC) || 
              ladoC < (ladoA + ladoB)
@@ -35,7 +37,6 @@ public class App {
             }
         
         } else {
-        
             System.out.println("Não é um triângulo");
         }
         
