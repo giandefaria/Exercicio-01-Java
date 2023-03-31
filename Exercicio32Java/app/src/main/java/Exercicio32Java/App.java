@@ -21,24 +21,28 @@ public class App {
         int ladoB = 0;
         int ladoC = 0;
         
+        char desejaRepetir = 's';
+        
         Scanner leitor = new Scanner(System.in);
         
-        if ( ladoA < (ladoB + ladoC) || 
-             ladoB < (ladoA + ladoC) || 
-             ladoC < (ladoA + ladoB)
-            ) {
-            
-            if (ladoA == ladoB && ladoB == ladoC){
-                System.out.println("Triangulo Equilatero, tres lados iguais");                
-            } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
-                System.out.println("Triângulo Isoscele, dois lados iguais");
+        while(desejaRepetir == 's' || desejaRepetir == 'S'){
+        
+            if ( ladoA < (ladoB + ladoC) || 
+                 ladoB < (ladoA + ladoC) || 
+                 ladoC < (ladoA + ladoB)
+                ) {
+
+                if (ladoA == ladoB && ladoB == ladoC){
+                    System.out.println("Triangulo Equilatero, tres lados iguais");                
+                } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+                    System.out.println("Triângulo Isoscele, dois lados iguais");
+                } else {
+                    System.out.println("Trianglo Escaleno, tres lados diferentes");
+                }
+
             } else {
-                System.out.println("Trianglo Escaleno, tres lados diferentes");
+                System.out.println("Não é um triângulo");
             }
-        
-        } else {
-            System.out.println("Não é um triângulo");
         }
-        
     }
 }
