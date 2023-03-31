@@ -37,11 +37,11 @@ public class App {
                     System.out.println("Digite um nivel válido, de 1 a 3");
                 }
             }
-        
+            
+            System.out.println("salario do professor é de R$ " + salario);
+            
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
-        }
-        
-        
+        }      
     }
 }
