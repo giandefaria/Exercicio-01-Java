@@ -17,5 +17,7 @@ public class App {
         int horas;
         float salario;
         
+        Scanner leitor = new Scanner(System.in);
+        
     }
 }
