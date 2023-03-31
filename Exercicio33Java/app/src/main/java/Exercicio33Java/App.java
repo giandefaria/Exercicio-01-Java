@@ -16,8 +16,17 @@ public class App {
         int nivel;
         int horas;
         float salario;
+        char desejaContinuar = 's';
         
         Scanner leitor = new Scanner(System.in);
+        
+        while (desejaContinuar == 's' || desejaContinuar == 'S'){
+        
+        
+            System.out.println("Deseja continuar? S - Sim, N - Não");
+            desejaContinuar = leitor.next().charAt(0);
+        }
+        
         
     }
 }
