@@ -21,7 +21,12 @@ public class App {
         Scanner leitor = new Scanner(System.in);
         
         while (desejaContinuar == 's' || desejaContinuar == 'S'){
-        
+            
+            System.out.println("Informe o nivel do professor: 1, 2 ou 3");
+            nivel = leitor.nextInt();
+            
+            System.out.println("Digite a quantidade de horas trabalhadas:");
+            horas = leitor.nextInt();
         
             System.out.println("Deseja continuar? S - Sim, N - Não");
             desejaContinuar = leitor.next().charAt(0);
