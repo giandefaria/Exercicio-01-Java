@@ -36,8 +36,8 @@ public class App {
             System.out.println("Informe o tamanho do ladoC");
             ladoC = leitor.nextInt();
             
-            if ( ladoA < (ladoB + ladoC) || 
-                 ladoB < (ladoA + ladoC) || 
+            if ( ladoA < (ladoB + ladoC) && 
+                 ladoB < (ladoA + ladoC) && 
                  ladoC < (ladoA + ladoB)
                 ) {
 
