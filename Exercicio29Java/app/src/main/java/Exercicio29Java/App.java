@@ -17,11 +17,10 @@ public class App {
         mes = leitor.nextInt();
         
         switch (mes) {
-            case 1:
-                System.out.println("Mês de janeiro");
-                break;
-            default:
-                System.out.println("Mês não existente. Digite valor de 1 a 12");
+            case 1 -> System.out.println("Mês de janeiro");
+            case 2 -> System.out.println("Mês de fevereiro");
+            case 3 -> System.out.println("Mês de março");
+            default -> System.out.println("Mês não existente. Digite valor de 1 a 12");
         }
         
     }
