@@ -34,6 +34,10 @@ public class App {
             
             switch(operador){
                 case '*' -> resultado = a * b;
+                case '/' -> resultado = a / b;
+                case '+' -> resultado = a + b;
+                case '-' -> resultado = a - b;
+                default -> System.out.println("Operador não definido");
             }
             
             System.out.println(resultado);
