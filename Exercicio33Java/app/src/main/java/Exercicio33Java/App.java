@@ -7,9 +7,15 @@ c. Professor Nível 3 R$25,00 por hora/aula.
  */
 package Exercicio33Java;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
+        
+        int nivel;
+        int horas;
+        float salario;
         
     }
 }
