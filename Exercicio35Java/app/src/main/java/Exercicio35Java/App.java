@@ -8,9 +8,16 @@ c. (Indústria) 1,29
  */
 package Exercicio35Java;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
+        
+        float quantidadeKW;
+        float valorContaLuz;
+        
+        Scanner leitor = new Scanner(System.in);
         
     }
 }
