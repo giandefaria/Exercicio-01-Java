@@ -13,7 +13,17 @@ public class App {
         int b;
         int c;
         
+        char desejaRepetir = 's';
+        
         Scanner leitor = new Scanner(System.in);
+        
+        while(desejaRepetir == 's' || desejaRepetir == 'S') {
+        
+        
+        
+            System.out.println("Deseja continuar? S - Sim, N - Não");
+            desejaRepetir = leitor.next().charAt(0);
+        }
         
     }
 }
