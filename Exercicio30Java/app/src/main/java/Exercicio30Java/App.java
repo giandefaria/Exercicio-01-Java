@@ -18,7 +18,15 @@ public class App {
         Scanner leitor = new Scanner(System.in);
         
         while(desejaRepetir == 's' || desejaRepetir == 'S') {
-        
+            
+            System.out.println("Informe o valor de 'a'");
+            a = leitor.nextInt();
+            
+            System.out.println("Informe o valor de 'b'");
+            b = leitor.nextInt();
+            
+            System.out.println("Informe o valor de 'c'");
+            c = leitor.nextInt();        
         
         
             System.out.println("Deseja continuar? S - Sim, N - Não");
