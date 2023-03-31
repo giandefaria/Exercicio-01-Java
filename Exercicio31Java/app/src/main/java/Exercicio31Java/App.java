@@ -15,6 +15,8 @@ public class App {
         int b = 0;
         char operador;
         
+        int resultado = 0;
+        
         char desejaRepetir = 's';
         
         Scanner leitor = new Scanner(System.in);
@@ -29,6 +31,12 @@ public class App {
             
             System.out.println("Informe um operador válido (*, /, +, -)");
             operador = leitor.next().charAt(0);
+            
+            switch(operador){
+                case '*' -> resultado = a * b;
+            }
+            
+            System.out.println(resultado);
             
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaRepetir = leitor.next().charAt(0);
