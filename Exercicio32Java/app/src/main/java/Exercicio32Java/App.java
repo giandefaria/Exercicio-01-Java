@@ -21,5 +21,19 @@ public class App {
         int ladoB = 0;
         int ladoC = 0;
         
+        if ( ((ladoB - ladoC) < ladoA && ladoA < (ladoB + ladoC)) ||
+             ((ladoA - ladoC) < ladoB && ladoB < (ladoA + ladoC)) ||
+             ((ladoA - ladoB) < ladoC && ladoC < (ladoA + ladoB))   
+            ) {
+            
+            if (ladoA == ladoB && ladoB == ladoC){
+                System.out.println("Triangulo Equilatero");                
+            }
+        
+        } else {
+        
+            System.out.println("Não é um triângulo");
+        }
+        
     }
 }
