@@ -31,11 +31,17 @@ public class App {
             
             if (tipoImovel == 'r' || tipoImovel == 'R') {
                 valorContaLuz = quantidadeKW * 0.60f;
+            } else if (tipoImovel == 'c' || tipoImovel == 'C') {
+                valorContaLuz = quantidadeKW * 0.48f;
+            } else if (tipoImovel == 'i' || tipoImovel == 'I') {
+                valorContaLuz = quantidadeKW * 1.29f;
+            } else {
+                valorContaLuz = 0;
+                System.out.println("Valor tipo de imóvel inválido");
             }
             
-            
-            
-                    
+            System.out.println("Conta de luz será de R$ " + valorContaLuz);
+                                
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaContinuar = leitor.next().charAt(0);
         }
