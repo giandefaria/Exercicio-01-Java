@@ -26,7 +26,16 @@ public class App {
         Scanner leitor = new Scanner(System.in);
         
         while(desejaRepetir == 's' || desejaRepetir == 'S'){
-        
+            
+            System.out.println("Informe o tamanho do ladoA:");
+            ladoA = leitor.nextInt();
+            
+            System.out.println("Informe o tamanho do ladoB:");
+            ladoB = leitor.nextInt();
+            
+            System.out.println("Informe o tamanho do ladoC");
+            ladoC = leitor.nextInt();
+            
             if ( ladoA < (ladoB + ladoC) || 
                  ladoB < (ladoA + ladoC) || 
                  ladoC < (ladoA + ladoB)
