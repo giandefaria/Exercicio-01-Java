@@ -19,5 +19,12 @@ public class App {
         
         Scanner leitor = new Scanner(System.in);
         
+        while (desejaRepetir == 's' || desejaRepetir == 'S') {
+        
+            
+            System.out.println("Deseja continuar? S - Sim, N - Nao");
+            desejaRepetir = leitor.next().charAt(0);
+        }
+        
     }
 }
