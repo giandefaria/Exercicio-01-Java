@@ -52,6 +52,9 @@ public class App {
             } else {
                 System.out.println("Não é um triângulo");
             }
+        
+            System.out.println("Deseja continuar? S - Sim, N - Nao");
+            desejaRepetir = leitor.next().charAt(0);
         }
     }
 }
