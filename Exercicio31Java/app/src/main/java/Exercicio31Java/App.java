@@ -5,9 +5,19 @@ impressa uma mensagem de operador não definido. Tratar erro de divisão por zer
  */
 package Exercicio31Java;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
+        
+        int a = 0;
+        int b = 0;
+        char operador;
+        
+        char desejaRepetir = 's';
+        
+        Scanner leitor = new Scanner(System.in);
         
     }
 }
