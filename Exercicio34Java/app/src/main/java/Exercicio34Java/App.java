@@ -21,8 +21,24 @@ public class App {
         Scanner leitor = new Scanner(System.in);
         
         while (desejaContinuar == 's' || desejaContinuar == 'S') {
-        
-        
+            
+            System.out.println("Informe a idade do nadador:");
+            idade = leitor.nextInt();
+            
+            if (idade >= 5 && idade <= 7) {
+                System.out.println("Nadador da categoria Infantil A");
+            } else if (idade >= 8 && idade <= 10) {
+                System.out.println("Nadador da categoria Infantil B");
+            } else if (idade >= 11 && idade <= 13) {
+                System.out.println("Nadador da categoria Juvenil A");
+            } else if (idade >= 14 && idade <= 17) {
+                System.out.println("Nadador da categoria Juvenil B");
+            } else if (idade >= 18 && idade <= 25) {
+                System.out.println("Nadador da categoria Senior");
+            } else {
+                System.out.println("Idade fora da faixa etaria");
+            }     
+                
             System.out.println("Deseja continuar? S - Sim, N - Nao");
             desejaContinuar = leitor.next().charAt(0);
         }
